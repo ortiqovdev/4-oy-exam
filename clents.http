@@ -1,0 +1,22 @@
+POST http://localhost:2111/register
+Content-Type: application/json
+
+{
+    "name":"Akmal",
+    "surname":"Ortiqov",
+    "age":20,
+    "email": "hasanov@gmail.com",
+    "passwprd":"2222"
+}
+
+###
+POST http://localhost:2111/login/
+Content-Type: application/json
+
+{
+    "email": "hasanov@gmail.com",
+    "password": "2r222"
+}
+
+###
+GET http://localhost:2111/users 
