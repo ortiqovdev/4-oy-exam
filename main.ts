@@ -39,11 +39,11 @@ server.post('/login', (request, response) => {
             .status(404)
             .send("User not found")
     } 
-    else if (parol !== undefined) {
-        response
-            .status(404)
-            .send("password is wrong")
-    }
+    // else if (parol?.password != undefined) {
+    //     response
+    //         .status(404)
+    //         .send("password is wrong")
+    // }
     else {
         response
             .status(200)
